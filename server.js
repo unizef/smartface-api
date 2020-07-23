@@ -15,16 +15,13 @@ const image = require('./Controllers/image');
 // POSTGRES CONFIG WITH KNEX.JS
 const db = knex({
     client: 'pg',
-    connection: {
-        host : '127.0.0.1',
-        user : 'unizef',
-        password : 'Digitalkid1990!',
-        database : 'smartbrain'
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
     }
 });
 
 const app = express();
-const port = 3000;
 
 app.use(express.json());
 app.use(cors());
