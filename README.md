@@ -5,7 +5,7 @@ This is the Node api for the [Smartface-app](https://github.com/unizef/smartface
 ****
 
 ### :wrench: Tech Stack
-express.js <br/>
+node.js <br/>
 postgres <br/>
 knex.js <br/>
 clarifai <br/>
